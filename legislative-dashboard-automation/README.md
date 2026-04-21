@@ -83,16 +83,3 @@ Designed for a resource-constrained environment, it replaces manual tracking wit
 
 ## 🔒 Data Privacy
 All data, categories, and examples have been anonymized to ensure confidentiality.
-
----
-
-## 📁 Repository Structure
-excel-dashboards/
-└── legislative-dashboard-automation/
-├── README.md
-├── queries/
-│ └── combined_legislative_data.m
-
-## Notes
-This repository documents the technical workflow and dashboard design approach.  
-All data, categories, and examples have been anonymized or generalized to ensure privacy and confidentiality.
