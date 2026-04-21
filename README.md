@@ -1,2 +1,6 @@
-# excel-dashboards
-End-to-end Excel dashboards with Power Query ETL, data modeling, and automated reporting workflows
+# Excel Dashboards
+
+A collection of Excel-based dashboard projects built using Power Query for automated data transformation and reporting.
+
+## Projects
+- Legislative Dashboard Automation (Completed)
