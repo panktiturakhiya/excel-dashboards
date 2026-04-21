@@ -57,18 +57,20 @@ Designed for a resource-constrained environment, it replaces manual tracking wit
 ---
 
 ## 🔁 Workflow
+1. Raw legislative data is exported  
+2. Power Query performs data ingestion and transformation (ETL)  
+3. Data is cleaned and structured for analysis  
+4. Pivot tables are used for aggregation  
+5. Interactive dashboard enables reporting and insights  
 
-```mermaid
-flowchart LR
-A[Raw Legislative Data] --> B[Power Query ETL]
-B --> C[Cleaned & Structured Data]
-C --> D[Pivot Tables]
-D --> E[Interactive Dashboard]
+---
 
 ## 📉 Constraints
 - No advanced BI tools (Power BI/Tableau not used)  
 - Built entirely in Excel for accessibility  
 - Optimized for maintainability over complexity  
+
+---
 
 ## 📈 Impact
 - ⏱️ Reduced manual reporting effort significantly  
@@ -77,15 +79,20 @@ D --> E[Interactive Dashboard]
 - 🧠 Enabled data-driven advocacy decisions  
 - 💰 Delivered a low-cost analytics solution  
 
+---
+
 ## 🔒 Data Privacy
 All data, categories, and examples have been anonymized to ensure confidentiality.
 
-## 📁 Repository Structure
+---
 
-```text
+## 📁 Repository Structure
 excel-dashboards/
 └── legislative-dashboard-automation/
-    ├── README.md
-    ├── queries/
-    │   └── combined_legislative_data.m
-    └── sample-data/
+├── README.md
+├── queries/
+│ └── combined_legislative_data.m
+
+## Notes
+This repository documents the technical workflow and dashboard design approach.  
+All data, categories, and examples have been anonymized or generalized to ensure privacy and confidentiality.
