@@ -11,6 +11,13 @@ Designed for a resource-constrained environment, it replaces manual tracking wit
 
 ---
 
+## 📊 Dashboard Preview
+
+![Legislative Dashboard](./assets/LegislativeDashboard.png)
+
+> ⚠️ **Note:** This dashboard preview is presented using **sanitized / dummy data** for demonstration purposes.  
+> The structure, transformations, and logic reflect the actual implementation, but no real or sensitive data is exposed.
+
 ## ⚠️ Problem
 - Manual tracking across categories, subjects, positions, and years  
 - Inconsistent reporting logic  
