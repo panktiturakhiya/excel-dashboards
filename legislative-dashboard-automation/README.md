@@ -1,74 +1,91 @@
-# Legislative Dashboard Automation (Excel + Power Query)
+# 📊 Legislative Dashboard Automation (Excel + Power Query)
 
-> Built for a nonprofit advocacy organization to improve accessibility of legislative insights using low-cost tools.  
+> Built for a nonprofit advocacy organization to improve accessibility of legislative insights using low-cost tools  
 > 🔗 [View Impact Story on Catchafire](https://catchafire.org/impact/match/4113159/promo--excel-dashboard-creation/)
 
 ---
 
-## Overview
-Developed a fully automated Excel-based dashboard to track and analyze legislative data using structured workflows. The solution was designed for a resource-constrained environment using accessible tools instead of a full BI stack.
+## 🚀 Overview
+This project delivers a fully automated Excel-based dashboard to track and analyze legislative data.  
+Designed for a resource-constrained environment, it replaces manual tracking with a scalable, repeatable reporting workflow using Power Query.
 
 ---
 
-## Problem
-Manual tracking of legislative data across multiple dimensions (category, subject, position, year) was time-consuming, inconsistent, and difficult for non-technical users to maintain. There was a need for a repeatable, scalable, and easy-to-use reporting system.
+## ⚠️ Problem
+- Manual tracking across categories, subjects, positions, and years  
+- Inconsistent reporting logic  
+- High dependency on manual effort  
+- Difficult for non-technical users to maintain  
 
 ---
 
-## Solution
-Built an automated reporting pipeline in Excel using Power Query to ingest, clean, and transform data into analysis-ready formats. The dashboard enables dynamic filtering, consistent KPI tracking, and minimal manual intervention.
+## 💡 Solution
+- Built an automated ETL pipeline using Power Query  
+- Transformed raw exports into structured, analysis-ready data  
+- Enabled dynamic filtering and consistent KPI tracking  
+- Designed for **self-service reporting with minimal manual effort**  
 
 ---
 
-## Tools & Technologies
-- Microsoft Excel  
-- Power Query (ETL)  
-- Pivot Tables & Charts  
-- Data transformation and reshaping techniques  
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|------|--------|
+| Excel | Dashboard & reporting layer |
+| Power Query | Data ingestion & transformation |
+| Pivot Tables | Aggregation & analysis |
+| Data Modeling | Structured reporting logic |
 
 ---
 
-## Key Features
+## ⭐ Key Features
 - Automated data ingestion from exported files  
-- Transformation of multi-valued fields into structured rows  
-- Dynamic filtering across categories, topics, and time  
-- KPI tracking across multiple analytical dimensions  
-- Designed for non-technical users with minimal manual effort  
+- Multi-value column normalization (Lists, Subjects, Positions)  
+- Dynamic filtering across categories, topics, and years  
+- KPI tracking across multiple dimensions  
+- Designed for non-technical users  
 
 ---
 
-## Data Transformation Approach
-- Split multi-select columns into multiple rows for accurate analysis  
-- Standardized categorical values across datasets  
-- Handled null/missing values to ensure consistency  
-- Created derived fields to support aggregation and reporting  
-- Enabled multi-dimensional analysis (category, topic, position, time)  
+## 🔄 Data Transformation Approach
+- Split multi-select columns into multiple rows  
+- Standardized categorical values  
+- Handled null/missing values (`Uncategorized`)  
+- Created derived analytical fields  
+- Enabled multi-dimensional analysis  
 
 ---
 
-## Workflow
-1. Load exported legislative data into Excel  
-2. Use Power Query to clean and reshape data  
-3. Create structured tables for analysis  
-4. Build pivot-based dashboard views  
-5. Enable refresh functionality for ongoing reporting  
+## 🔁 Workflow
 
----
+```mermaid
+flowchart LR
+A[Raw Legislative Data] --> B[Power Query ETL]
+B --> C[Cleaned & Structured Data]
+C --> D[Pivot Tables]
+D --> E[Interactive Dashboard]
 
-## Constraints
-This solution was intentionally built without advanced BI tools. The focus was to create a low-cost, maintainable, and scalable system using only Excel and Power Query.
+## 📉 Constraints
+- No advanced BI tools (Power BI/Tableau not used)  
+- Built entirely in Excel for accessibility  
+- Optimized for maintainability over complexity  
 
----
+## 📈 Impact
+- ⏱️ Reduced manual reporting effort significantly  
+- 📊 Improved consistency and reliability  
+- ⚡ Faster insight generation  
+- 🧠 Enabled data-driven advocacy decisions  
+- 💰 Delivered a low-cost analytics solution  
 
-## Impact
-- Reduced manual reporting effort  
-- Improved consistency and reliability of data tracking  
-- Enabled faster and more accessible insight generation  
-- Supported data-driven decision-making for advocacy efforts  
-- Contributed to significant resource savings by streamlining reporting workflows  
+## 🔒 Data Privacy
+All data, categories, and examples have been anonymized to ensure confidentiality.
 
----
+## 📁 Repository Structure
 
-## Notes
-This repository documents the technical workflow and dashboard design approach.  
-All data, categories, and examples have been anonymized or generalized to ensure privacy and confidentiality.
+```text
+excel-dashboards/
+└── legislative-dashboard-automation/
+    ├── README.md
+    ├── queries/
+    │   └── combined_legislative_data.m
+    └── sample-data/
